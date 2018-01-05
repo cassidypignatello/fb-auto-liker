@@ -4,7 +4,10 @@
   "description": "An app that auto-likes a user's Facebook post and notifies you via text.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "webpack-dev-server --open"
+  },
+  "babel": {
+    "presets": ["env", "react"]
   },
   "repository": {
     "type": "git",
