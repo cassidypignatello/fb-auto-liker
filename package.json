@@ -1,0 +1,28 @@
+{
+  "name": "fb-auto-liker",
+  "version": "1.0.0",
+  "description": "An app that auto-likes a user's Facebook post and notifies you via text.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cassidypignatello/fb-auto-liker.git"
+  },
+  "keywords": [
+    "react",
+    "facebook",
+    "twilio"
+  ],
+  "author": "Cassidy Pignatello",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cassidypignatello/fb-auto-liker/issues"
+  },
+  "homepage": "https://github.com/cassidypignatello/fb-auto-liker#readme",
+  "dependencies": {
+    "react": "^16.2.0",
+    "react-dom": "^16.2.0"
+  }
+}
