@@ -8,16 +8,13 @@ export default class HomeForm extends React.Component {
       username: '',
       userphone: ''
     };
-
-    this.handleSubmit = this.handleSubmit.bind(this);
-    this.handleChange = this.handleChange.bind(this);
   }
 
-  handleSubmit() {
+  handleSubmit = (e) => {
     e.preventDefault();
   }
 
-  handleChange(e) {
+  handleChange = (e) => {
     this.setState({
       [e.target.name]: e.target.value
     });
@@ -71,7 +68,10 @@ export default class HomeForm extends React.Component {
           />
           <button
             className='button'
-            type='submit'>
+            type='submit'
+            disabled={!this.state.trackedUser ||
+                      !this.state.username ||
+                      !this.state.userphone}>
             Submit
           </button>
         </form>
