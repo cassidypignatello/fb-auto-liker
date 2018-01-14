@@ -76,6 +76,10 @@ footer {
   margin: 10px auto;
 }
 
+.button:hover {
+  cursor: pointer;
+}
+
 .user-form input {
   margin: 5px;
   width: 200px;

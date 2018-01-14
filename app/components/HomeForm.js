@@ -26,6 +26,14 @@ export default class HomeForm extends React.Component {
     });
   }
 
+  handleReset = () => {
+    this.setState({
+      trackedUser: '',
+      username: '',
+      userphone: ''
+    });
+  }
+
   render() {
     return(
       <div>
@@ -79,6 +87,12 @@ export default class HomeForm extends React.Component {
                       !this.state.username ||
                       !this.state.userphone}>
             Submit
+          </button>
+          <button
+            className='button'
+            type='reset'
+            onClick={this.handleReset}>
+            Reset
           </button>
         </form>
       </div>
