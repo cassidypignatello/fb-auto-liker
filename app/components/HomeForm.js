@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 export default class HomeForm extends React.Component {
   constructor(props){
@@ -12,6 +13,11 @@ export default class HomeForm extends React.Component {
 
   handleSubmit = (e) => {
     e.preventDefault();
+    this.props.onSubmit(
+      this.state.trackedUser,
+      this.state.username,
+      this.state.userphone
+    );
   }
 
   handleChange = (e) => {
@@ -78,4 +84,8 @@ export default class HomeForm extends React.Component {
       </div>
     );
   }
+}
+
+HomeForm.propTypes = {
+  onSubmit: PropTypes.func.isRequired
 }
